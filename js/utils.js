@@ -1,4 +1,4 @@
-class mm{
+class mm {
 	constructor() {
 		this.ls = window.localStorage;
 	}
@@ -47,6 +47,15 @@ class mm{
 		return /^(0\86\17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/.test(str);
 	}
 
+	// 中文
+	isChinese(str) {
+		return /^[\u4E00-\u9FA5]+$/.test(str);
+	}
+
+	// 座机
+	isTel(str) {
+		return /^(0\d{2,3}-\d{7,8})(-\d{1,4})?$/.test(str);
+	}
 	// 判断是否为身份
 	isIdCard(str) {
 		return /^(^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$)|(^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[Xx])$)$/.test(str)
@@ -100,27 +109,89 @@ class mm{
 		this.ls.clear();
 	}
 	// 三个进行比较大小
-	threeCompareSzie(a, b, c){
+	threeCompareSzie(a, b, c) {
 		// 三目表达式
 		let max = a > b ? (a > c ? a : c) : (b > c ? b : c);
 		return max;
 	}
 	//判断两个对象是否相等
-	equalObj(a,b){
-		for(let p in a){
+	equalObj(a, b) {
+		for(let p in a) {
 			if(a[p] !== b[p]) return false;
 		}
 		return true;
 	}
 	// 判断两个数组是否相等
-	 equalArrays(arrOne, arrTwo){
+	equalArrays(arrOne, arrTwo) {
 		if(arrOne.length !== arrTwo.length) return false;
-		for(let i = 0; i< arrOne.length; i++){
+		for(let i = 0; i < arrOne.length; i++) {
 			if(arrOne[i] !== arrTwo[i]) return false;
 		}
 		return true;
 	}
+	// 判断是否为ios
+	isIos() {
+		let u = navigator.userAgent;
+		if(u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) { //安卓手机
+			return false
+		} else if(u.indexOf('iPhone') > -1) { //苹果手机
+			return true
+		} else if(u.indexOf('iPad') > -1) { //iPad
+			return false
+		} else if(u.indexOf('Windows Phone') > -1) { //winphone手机
+			return false
+		} else {
+			return false
+		}
+	}
+
+	// 空字符串操作
+	trim(options) {
+		let str = optios.str
+		let type = options.type || 1 //默认去掉所有的空格
+		switch(type) {
+			case 1:
+				return str.replace(/\s+/g, ""); // 所有空格
+			case 2:
+				return str.replace(/(^\s*)|(\s*$)/g, ""); // 前后空格
+			case 3:
+				return str.replace(/(^\s*)/g, ""); // 前空格
+			case 4:
+				return str.replace(/(\s*$)/g, ""); // 后空格
+			default:
+				return str; // 没人传就直接返回字符串
+		}
+	}
+	// 控制字数操作
+	/*
+	 * 调用方式
+	 * utils.wordSub({
+	 *  str: ''
+	 * 	ran: true,
+	 * 	minRan: 10,
+	 * 	maxRan: 16
+	 * })
+	 */
+	wordSub(params) {
+		if(!(params instanceof Object) && !(params instanceof Array)) {
+			return
+		}
+		let ran = params.ran || false,
+			minRan = params.minRan,
+			maxRan = params.maxRan,
+			len = params.str.length,
+			maxLen = '';
+		if(len > minRan) {
+			if(ran) {
+				maxLen = Math.floor(Math.random() * (maxRan - minRan + 1) + minRan);
+			} else {
+				maxLen = params.maxRan;
+			}
+			var textLen = params.str.substring(0, maxLen);
+			return textLen + "...";
+		}
+	}
 
 };
 let utils = new mm()
-export default utils
+//export default utils
