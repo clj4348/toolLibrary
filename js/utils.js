@@ -174,7 +174,7 @@ class mm {
 	 */
 	wordSub(params) {
 		if(!(params instanceof Object) && !(params instanceof Array)) {
-			return
+			return '';
 		}
 		let ran = params.ran || false,
 			minRan = params.minRan,
@@ -192,6 +192,43 @@ class mm {
 		}
 	}
 
+	// 统一货币显示格式，保留2位小数，整数部分3位加逗号
+	currencyFormatter(option) {
+		// 抛出异常
+		if(isNaN(option)) {
+			throw Error('参数不是数字类型')
+		}
+
+		let fxNum = parseFloat(option) //转为浮点数
+		let strfloat = fxNum.toString();
+		// 判断是否有小数点, 没有就初始化两位小数
+		if(strfloat.indexOf('.') == -1) {
+			strfloat += '.00'
+		}
+
+		let intLen = strfloat.indexOf('.'); // 整数部分的长度
+		if(intLen <= 3) {
+			return fxNum.toFixed(2); // 格式两位小数点
+		}
+
+		let arr = [];
+		let str = '';
+		for(let i = 0; i < intLen; i++) {
+			arr.push(strfloat.charAt(i)) // 添加到数组中
+		}
+
+		for(let i = 0; i < arr.length; i++) {
+			// i需要从1开始算起 并且  i取余  === intLen 取余
+			if(i > 0 && i % 3 === intLen % 3) {
+				str += ','
+			}
+			str += strfloat.charAt(i) // 根据数据小标拼接数据
+		}
+		// 需要转化为两位小数点的字符串
+		strfloat = parseFloat(strfloat).toFixed(2);
+		str += strfloat.substring(strfloat.length - 3);
+		return str;
+	}
 };
 let utils = new mm()
 //export default utils
