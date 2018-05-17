@@ -1,0 +1,243 @@
+{
+    "content": {
+        "data": {
+            "isLogin": false,
+            "page": {
+                "pageSize": 15,
+                "start": "30",
+                "result": [
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3719020,
+                        "positionName": "手游运营总监",
+                        "city": "广州",
+                        "createTime": "今天 17:58",
+                        "salary": "30k-50k",
+                        "companyId": 93656,
+                        "companyLogo": "image2/M00/02/08/CgpzWlXmoESAKjeXAAKNP52oZ18883.png",
+                        "companyName": "火舞游戏",
+                        "companyFullName": "广州火舞软件开发股份有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3719031,
+                        "positionName": "系统策划",
+                        "city": "广州",
+                        "createTime": "今天 17:58",
+                        "salary": "5k-9k",
+                        "companyId": 93656,
+                        "companyLogo": "image2/M00/02/08/CgpzWlXmoESAKjeXAAKNP52oZ18883.png",
+                        "companyName": "火舞游戏",
+                        "companyFullName": "广州火舞软件开发股份有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3715639,
+                        "positionName": "运营经理（活动策划/用户口碑方向）",
+                        "city": "北京",
+                        "createTime": "今天 17:55",
+                        "salary": "20k-40k",
+                        "companyId": 21732,
+                        "companyLogo": "i/image/M00/8D/38/CgqKkViFbUuAFp3jAAA5cKJS5-4462.png",
+                        "companyName": "FitTime睿健时代",
+                        "companyFullName": "无锡市睿健时代贸易有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3715292,
+                        "positionName": "质检专员",
+                        "city": "北京",
+                        "createTime": "今天 17:55",
+                        "salary": "5k-9k",
+                        "companyId": 21732,
+                        "companyLogo": "i/image/M00/8D/38/CgqKkViFbUuAFp3jAAA5cKJS5-4462.png",
+                        "companyName": "FitTime睿健时代",
+                        "companyFullName": "无锡市睿健时代贸易有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3705073,
+                        "positionName": "新媒体运营（实习生）",
+                        "city": "北京",
+                        "createTime": "今天 17:50",
+                        "salary": "2k-4k",
+                        "companyId": 740,
+                        "companyLogo": "i/image/M00/83/9E/CgqKkVhaM3uAU34jAABxxlf0qhQ433.png",
+                        "companyName": "时趣social-touch",
+                        "companyFullName": "时趣互动（北京）科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3705123,
+                        "positionName": "CRM战略高级咨询师",
+                        "city": "北京",
+                        "createTime": "今天 17:50",
+                        "salary": "10k-20k",
+                        "companyId": 740,
+                        "companyLogo": "i/image/M00/83/9E/CgqKkVhaM3uAU34jAABxxlf0qhQ433.png",
+                        "companyName": "时趣social-touch",
+                        "companyFullName": "时趣互动（北京）科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3705225,
+                        "positionName": "会计",
+                        "city": "北京",
+                        "createTime": "今天 17:46",
+                        "salary": "6k-8k",
+                        "companyId": 196777,
+                        "companyLogo": "i/image/M00/19/83/CgpEMlj8J7yAZbCtAADg3NOnj7Q122.jpg",
+                        "companyName": "资格宝",
+                        "companyFullName": "北京三义资格教育科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3705428,
+                        "positionName": "UI设计师",
+                        "city": "杭州",
+                        "createTime": "今天 17:44",
+                        "salary": "8k-16k",
+                        "companyId": 54749,
+                        "companyLogo": "image1/M00/0D/53/Cgo8PFT3NqKAEHC6AABxIGh6lcw887.jpg",
+                        "companyName": "杭为科技",
+                        "companyFullName": "杭州杭为网络科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3704700,
+                        "positionName": "高级 Java 工程师",
+                        "city": "上海",
+                        "createTime": "今天 17:40",
+                        "salary": "20k-30k",
+                        "companyId": 213202,
+                        "companyLogo": "i/image2/M00/13/57/CgotOVnv8vqAUNrOAAAoiYeFwH0053.png",
+                        "companyName": "全息数据",
+                        "companyFullName": "银川全息数据科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3717439,
+                        "positionName": "机器学习工程师",
+                        "city": "上海",
+                        "createTime": "今天 17:40",
+                        "salary": "15k-30k",
+                        "companyId": 213202,
+                        "companyLogo": "i/image2/M00/13/57/CgotOVnv8vqAUNrOAAAoiYeFwH0053.png",
+                        "companyName": "全息数据",
+                        "companyFullName": "银川全息数据科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3705874,
+                        "positionName": "网络工程师",
+                        "city": "大连",
+                        "createTime": "今天 17:37",
+                        "salary": "4k-8k",
+                        "companyId": 14059,
+                        "companyLogo": "i/image/M00/63/AE/CgpFT1mfvG2AZxGvAAAWTUTsxco950.png",
+                        "companyName": "租租车",
+                        "companyFullName": "广州力挚网络科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3716631,
+                        "positionName": "信贷管理（合规方向）",
+                        "city": "上海",
+                        "createTime": "今天 17:35",
+                        "salary": "10k-15k",
+                        "companyId": 189307,
+                        "companyLogo": "i/image/M00/24/8E/CgpFT1kdF7iAAcSnAAAMsnLpA_E862.gif",
+                        "companyName": "雪橙金服",
+                        "companyFullName": "上海雪橙资产管理有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3716110,
+                        "positionName": "员工关系主管（劳动纠纷处理）",
+                        "city": "上海",
+                        "createTime": "今天 17:35",
+                        "salary": "8k-12k",
+                        "companyId": 189307,
+                        "companyLogo": "i/image/M00/24/8E/CgpFT1kdF7iAAcSnAAAMsnLpA_E862.gif",
+                        "companyName": "雪橙金服",
+                        "companyFullName": "上海雪橙资产管理有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3716725,
+                        "positionName": "旅游编辑",
+                        "city": "北京",
+                        "createTime": "今天 17:34",
+                        "salary": "6k-10k",
+                        "companyId": 55071,
+                        "companyLogo": "i/image/M00/3E/DB/CgpEMllQre2Ac2xsAACKfRcrcc8615.jpg",
+                        "companyName": "帕拉旅行",
+                        "companyFullName": "北京阳光帕拉国际旅行社有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3717514,
+                        "positionName": "客户运营助理~~提供转正",
+                        "city": "杭州",
+                        "createTime": "今天 17:31",
+                        "salary": "3k-4k",
+                        "companyId": 50839,
+                        "companyLogo": "i/image/M00/C0/69/Cgp3O1jScYyAJNasAAAP-86ODmw365.jpg",
+                        "companyName": "懒懒网",
+                        "companyFullName": "杭州嘉洁网络科技有限公司"
+                    }
+                ],
+                "totalCount": "284659",
+                "pageNo": 3
+            }
+        },
+        "rows": []
+    },
+    "message": "第3页数据,每页15条, 查询成功!",
+    "state": 1
+}

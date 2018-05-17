@@ -1,0 +1,243 @@
+{
+    "content": {
+        "data": {
+            "isLogin": false,
+            "page": {
+                "pageSize": 15,
+                "start": "15",
+                "result": [
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3704744,
+                        "positionName": "camera效果调试工程师",
+                        "city": "西安",
+                        "createTime": "今天 18:07",
+                        "salary": "10k-20k",
+                        "companyId": 16831,
+                        "companyLogo": "i/image/M00/02/AB/CgqKkVaXX_6AaLKaAAAX52Kvjjg750.jpg",
+                        "companyName": "武汉佰钧成技术有限公司",
+                        "companyFullName": "武汉佰钧成技术有限责任公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3719126,
+                        "positionName": "高级Java开发工程师",
+                        "city": "西安",
+                        "createTime": "今天 18:07",
+                        "salary": "12k-22k",
+                        "companyId": 16831,
+                        "companyLogo": "i/image/M00/02/AB/CgqKkVaXX_6AaLKaAAAX52Kvjjg750.jpg",
+                        "companyName": "武汉佰钧成技术有限公司",
+                        "companyFullName": "武汉佰钧成技术有限责任公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3705473,
+                        "positionName": "前台行政专员",
+                        "city": "上海",
+                        "createTime": "今天 18:06",
+                        "salary": "5k-6k",
+                        "companyId": 2002,
+                        "companyLogo": "i/image/M00/4A/86/CgqKkVea6luAI_CVAAAgqi4Vedg579.png",
+                        "companyName": "足球魔方",
+                        "companyFullName": "上海好体信息科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3718763,
+                        "positionName": "编辑（地产、零售、消费领域）",
+                        "city": "北京",
+                        "createTime": "今天 18:02",
+                        "salary": "6k-10k",
+                        "companyId": 38,
+                        "companyLogo": "image1/M00/00/01/CgYXBlTUV_OAFSsTAABNUN6S1_I544.png",
+                        "companyName": "虎嗅网",
+                        "companyFullName": "北京虎嗅信息科技股份有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3718737,
+                        "positionName": "高级运营经理",
+                        "city": "上海",
+                        "createTime": "今天 18:00",
+                        "salary": "20K-30K",
+                        "companyId": 86331,
+                        "companyLogo": "i/image/M00/53/39/CgpEMll2-eSAVlYtAAAhv1oOgWI216.png",
+                        "companyName": "普资金服",
+                        "companyFullName": "上海普资金融信息服务股份有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3718778,
+                        "positionName": "产品运营",
+                        "city": "上海",
+                        "createTime": "今天 18:00",
+                        "salary": "10K-20K",
+                        "companyId": 86331,
+                        "companyLogo": "i/image/M00/53/39/CgpEMll2-eSAVlYtAAAhv1oOgWI216.png",
+                        "companyName": "普资金服",
+                        "companyFullName": "上海普资金融信息服务股份有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3718992,
+                        "positionName": "游戏运营专员",
+                        "city": "广州",
+                        "createTime": "今天 17:58",
+                        "salary": "6k-10k",
+                        "companyId": 93656,
+                        "companyLogo": "image2/M00/02/08/CgpzWlXmoESAKjeXAAKNP52oZ18883.png",
+                        "companyName": "火舞游戏",
+                        "companyFullName": "广州火舞软件开发股份有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3719015,
+                        "positionName": "渠道商务",
+                        "city": "广州",
+                        "createTime": "今天 17:58",
+                        "salary": "4k-8k",
+                        "companyId": 93656,
+                        "companyLogo": "image2/M00/02/08/CgpzWlXmoESAKjeXAAKNP52oZ18883.png",
+                        "companyName": "火舞游戏",
+                        "companyFullName": "广州火舞软件开发股份有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3705175,
+                        "positionName": "营销策划主管",
+                        "city": "重庆",
+                        "createTime": "今天 17:56",
+                        "salary": "5k-8k",
+                        "companyId": 223581,
+                        "companyLogo": "i/image2/M00/05/F7/CgotOVnIw3KASak0AAA8MZygE9U998.png",
+                        "companyName": "天降集团",
+                        "companyFullName": "重庆天降端瑞广告传媒有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3704456,
+                        "positionName": "游戏充值客户代表",
+                        "city": "杭州",
+                        "createTime": "今天 17:56",
+                        "salary": "5k-10k",
+                        "companyId": 10323,
+                        "companyLogo": "i/image/M00/00/FB/CgqKkVZdIAuANZLnAABRYOsmexs609.png",
+                        "companyName": "畅唐网络",
+                        "companyFullName": "浙江畅唐网络股份有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3717124,
+                        "positionName": "SEO/SEM经理",
+                        "city": "北京",
+                        "createTime": "今天 17:56",
+                        "salary": "20k-35k",
+                        "companyId": 21732,
+                        "companyLogo": "i/image/M00/8D/38/CgqKkViFbUuAFp3jAAA5cKJS5-4462.png",
+                        "companyName": "FitTime睿健时代",
+                        "companyFullName": "无锡市睿健时代贸易有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3715378,
+                        "positionName": "客服实习生",
+                        "city": "北京",
+                        "createTime": "今天 17:56",
+                        "salary": "3k-4k",
+                        "companyId": 21732,
+                        "companyLogo": "i/image/M00/8D/38/CgqKkViFbUuAFp3jAAA5cKJS5-4462.png",
+                        "companyName": "FitTime睿健时代",
+                        "companyFullName": "无锡市睿健时代贸易有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3705505,
+                        "positionName": "资深社区运营（杭州）",
+                        "city": "杭州",
+                        "createTime": "今天 17:52",
+                        "salary": "4k-8k",
+                        "companyId": 90963,
+                        "companyLogo": "image2/M00/09/A8/CgqLKVYKTSSAD4D_AABGvZq4tJc490.png",
+                        "companyName": "美妆心得",
+                        "companyFullName": "杭州和颜悦色科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3706269,
+                        "positionName": "游戏服务器",
+                        "city": "成都",
+                        "createTime": "今天 17:50",
+                        "salary": "10k-20k",
+                        "companyId": 108619,
+                        "companyLogo": "i/image/M00/00/FC/Cgp3O1ZdO0KAbsUvAAAa45W2AoQ289.png",
+                        "companyName": "盖亚互动",
+                        "companyFullName": "成都盖亚互动信息技术有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 3719466,
+                        "positionName": "企业文化经理",
+                        "city": "郑州",
+                        "createTime": "今天 17:50",
+                        "salary": "7k-9k",
+                        "companyId": 116333,
+                        "companyLogo": "i/image/M00/08/5A/Cgp3O1bP4I6ADzzJAAAmVzLsdhs964.jpg",
+                        "companyName": "象聚集团",
+                        "companyFullName": "河南象聚实业有限公司"
+                    }
+                ],
+                "totalCount": "284659",
+                "pageNo": 2
+            }
+        },
+        "rows": []
+    },
+    "message": "第2页数据,每页15条, 查询成功!",
+    "state": 1
+}
