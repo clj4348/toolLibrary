@@ -30,3 +30,7 @@ const deepCopy = (obj1, obj2) => {
 	// 是否为深拷贝
 	return o;
 }
+//export {
+//	shallowCopy,
+//	deepCopy
+//}

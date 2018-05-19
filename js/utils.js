@@ -196,7 +196,7 @@ class mm {
 	currencyFormatter(option) {
 		// 抛出异常
 		if(isNaN(option)) {
-			throw Error('参数不是数字类型')
+			throw Error('参数不是Number类型')
 		}
 
 		let fxNum = parseFloat(option) //转为浮点数
@@ -222,7 +222,7 @@ class mm {
 			if(i > 0 && i % 3 === intLen % 3) {
 				str += ','
 			}
-			str += strfloat.charAt(i) // 根据数据小标拼接数据
+			str += strfloat.charAt(i) // 根据数数组下标拼接数据
 		}
 		// 需要转化为两位小数点的字符串
 		strfloat = parseFloat(strfloat).toFixed(2);
@@ -231,4 +231,4 @@ class mm {
 	}
 };
 let utils = new mm()
-//export default utils
+export default utils
