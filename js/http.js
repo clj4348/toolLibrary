@@ -13,6 +13,7 @@ const convertData = (data) => {
 		return data;
 	}
 }
+	
 const http = (url, params) => {
 	let httpData = {
 		type: params.type || "GET", // 请求方式
@@ -51,6 +52,7 @@ const http = (url, params) => {
 		}
 	})
 }
+
 http("./data/data.json", {
 	type:'GET',
 	dataType: 'json',

@@ -229,6 +229,19 @@ class mm {
 		str += strfloat.substring(strfloat.length - 3);
 		return str;
 	}
+
+	// 节流函数
+	throttle(fn, delay) {
+		// 默认节流时间
+		let delayDefault = delay || 200
+		let timer = null;
+		return(param) => {
+			clearTimeout(timer);
+			timer = setTimeout(() => {
+				fn && fn(param); // 是否有回调函数
+			}, delayDefault)
+		}
+	}
 };
 let utils = new mm()
-export default utils
+//export default utils

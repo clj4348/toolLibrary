@@ -66,9 +66,16 @@ const getViewportSize = () => {
 		h: w.screen.width
 	}
 }
-export {
-	$,
-	getScrollOffset,
-	getViewportSize,
-	isPC
+// 获取元素的偏移量
+const position = (el) => {
+	return {
+		top: el.offsetTop,
+		left: el.offsetLeft
+	}
 }
+//export {
+//	$,
+//	getScrollOffset,
+//	getViewportSize,
+//	isPC
+//}
