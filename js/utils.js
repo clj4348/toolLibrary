@@ -2,13 +2,23 @@ class mm {
 	constructor() {
 		this.ls = window.localStorage;
 	}
-
+	// 将本地日期格式转换为 IOS 日期
+	IOSDateString(date) {
+		let pad = (d) => d < 10 ? "0" + d : d;
+		return date.getFullYear() + '/' +
+			pad(date.getMonth() + 1) + '/' +
+			pad(date.getDate()) + '/' +
+			pad(date.getHours()) + ':' +
+			pad(date.getMinutes()) + ':' +
+			pad(date.getSeconds())
+	}
 	// 格式化时间
 	formatPassTime(timestamp) {
+		let pad = (d) => d < 10 ? "0" + d : d;
 		let oldDate = new Date(timestamp.replace(/\S/, 'T')); //旧的时间戳
 		let year = oldDate.getFullYear(); //格式化年份
-		let month = oldDate.getMonth() + 1 < 10 ? '0' + (oldDate.getMonth() + 1) : oldDate.getMonth(); //格式化月份
-		let day = oldDate.getDate() < 10 ? '0' + oldDate.getDate() : oldDate.getDate(); //格式化天数
+		let month = pad(oldDate.getMonth() + 1);//格式化月份
+		let day = pad(oldDate.getDate()); //格式化天数
 		let now = new Date(); //当前时间戳
 		// 转换为秒级的时间戳
 		let timer = (now - oldDate) / 1000;
@@ -230,9 +240,9 @@ class mm {
 		return str;
 	}
 
-	// 节流函数
+	// 防抖动函数
 	throttle(fn, delay) {
-		// 默认节流时间
+		// 默认防抖动时间
 		let delayDefault = delay || 200
 		let timer = null;
 		return(param) => {
@@ -241,6 +251,30 @@ class mm {
 				fn && fn(param); // 是否有回调函数
 			}, delayDefault)
 		}
+	}
+	/***** 数组操作 ****/
+	// 从给定数组中移除一项 返回新的数组
+	removeArrItem(arr, item) {
+		let i = 0;
+		while(i < arr.length) {
+			if(arr[i] === item) {
+				arr.splice(i, 1) // 删除本身
+			} else {
+				i++
+			}
+		}
+		return arr;
+	}
+
+	// 检查数组中是否包含某项
+	contains(arr, item) {
+		let i = arr.length;
+		while(i--) {
+			if(arr[i] === item) {
+				return true
+			}
+		}
+		return false
 	}
 };
 let utils = new mm()

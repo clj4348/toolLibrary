@@ -1,0 +1,76 @@
+/* 省略号 */
+ellipsis()
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+  
+/* 垂直居中的方法 */
+posi-center()
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  
+/* 这里是单边的垂直居中方法 */
+posi-top-bottom()
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+
+/* 垂直居中 transform: translate(-50%, -50%) 会使元素的宽为一半的大小 */
+posi-trans()
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  
+/* 禁止选中文本 */
+usn()
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  -o-user-select: none
+  user-select: none
+  
+/* 多出部分用省略号表示 , 用于一行 */
+wes()
+  overflow: hidden
+  word-wrap: normal
+  white-space: nowrap
+  text-overflow: ellipsis
+
+/* 两行行溢出 */
+wes-2()
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 2
+  overflow: hidden
+
+/* 三行溢出 */
+wes-3()
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 3
+  overflow: hidden
+  
+/* 四行溢出 */
+wes-4()
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 4
+  overflow: hidden
+
+/* 表格垂直居中 */
+table-cell()
+	display: table-cell
+	vertical-align: middle;
+	text-align: center;
+	
+/* 表格垂直居中 宽度撑满 */
+table-cell-w()
+	display: table-cell
+	vertical-align: middle;
+	text-align: center;
+	width: 1%
