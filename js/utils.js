@@ -1,3 +1,4 @@
+
 class mm {
 	constructor() {
 		this.ls = window.localStorage;
