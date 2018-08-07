@@ -19,11 +19,11 @@
 	float: right;
 }
 
-.cf {
+.clearfix {
 	zoom: 1;
 }
 
-.cf:after {
+.clearfix:after {
 	content: ".";
 	display: block;
 	clear: both;
