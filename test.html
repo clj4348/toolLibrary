@@ -2,11 +2,124 @@
 	<head>
 		<title>My first three.js app</title>
 		<style>
-			body { margin: 0; }
-			canvas { width: 100%; height: 100% }
+			*{
+				padding: 0;
+				margin: 0;
+				user-select: none;
+			}
+			.container {
+				padding: 20px;
+				width: 100%;
+			}
+			.clearfix{
+				position: relative;
+				clear: both;
+			}
+			.clearfix:after {
+				content: '';
+				display: block;
+				clear: both;
+				width: 0;
+				height: 0;
+			}
+			.select {
+				float: left;
+				width: 200px;
+				height: 20px;
+				border: 1px  solid #e5e5e5;
+				border-radius: 4px;
+				padding: 0 10px;
+				margin-right: 10px;
+				margin-top: 10px;
+			}
+			.search {
+				float: left;
+				display: block;
+				color: #fff;
+				width: 50px;
+				height: 20px;
+				font-size: 12px;
+				line-height: 20px;
+				text-align: center;
+				background: #ff922d;
+				margin-top: 10px;
+				cursor: pointer;
+			}
 		</style>
 	</head>
 	<body>
-
+		<div id="app">
+			<div class="container clearfix" id="container">
+				<select class="select" v-model="versionVal" @change="changeVersion($event)">
+					<option value="">请选择</option>
+					<option v-for="(item, index) in selectListVersion" :value="item.value" :key="index">{{ item.text }}</option>
+				</select>
+				<select class="select" v-model="groupVal">
+					<option value="">请选择</option>
+					<option v-for="(item, index) in selectListGroup" :value="item.value" :key="index">{{ item.text }}</option>
+				</select>
+				<select class="select" v-model="staffVal">
+					<option value="">请选择</option>
+					<option v-for="(item, index) in selectListStaff" :value="item.value" :key="index">{{ item.text }}</option>
+				</select>
+				<div class="search" @click="submit">搜索</div>
+			</div>
+		</div>
 	</body>
+	<script src="./js/jquery-2.1.1.min.js"></script>
+	<script src="./js/vue.min.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data: function() {
+				return {
+					versionVal: '',
+					selectListVersion: [
+						{
+							text: '第一版',
+							value: '01',
+						},
+						{
+							text: '第二版',
+							value: '02',
+						},
+					],
+					groupVal: '',
+					selectListGroup: [
+						{
+							text: '大组',
+							value: 'dazu'
+						},
+						{
+							text: '小组',
+							value: 'xiaozu'
+						}
+					],
+					staffVal: '',
+					selectListStaff: [
+						{
+							text: '张三',
+							value: 'zhangsan'
+						},
+						{
+							text: '李四',
+							value: 'lisi'
+						}
+					],
+					flag: false
+				}
+			},
+			methods: {
+				changeVersion: function(e) {
+					
+				},
+				submit: function(){
+					console.log(this.versionVal, this.staffVal, this.groupVal, 'versionVal')
+				}
+			},
+			mounted: function() {
+				this.flag = true
+			}
+		})
+	</script>
 </html>

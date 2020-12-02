@@ -178,7 +178,7 @@ function nonRepeatedData() {
  * 然后再加上5天即本月的第几天，特殊情况，闰年且输入月份大于3时需考虑多加一天。
  * */
 
-// 定义一个多少天的方法
+// 定义一个月多少天的方法
 function countDay(year, month, day) {
 	var sum = 0
 	var days = 0
@@ -213,4 +213,3 @@ function countDay(year, month, day) {
 	sum = sum + day
 	return sum
 }
-00

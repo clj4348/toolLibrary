@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="font-size: 50px;">
+<html>
 
 	<head>
 		<meta charset="UTF-8">
@@ -24,14 +24,99 @@
 	</style>
 
 	<body style="text-align: center;">
-		<div id="ball">
-
-		</div>
+		<div id="ida"></div>
 	</body>
 
 </html>
 <script src="js/sort.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	let arr = [12, 15, 9, 10, 6, 20, 17, 40, 51, 32];
-	console.log(mergeSort(arr))
+// function fn1() {
+// 	console.log(arguments)
+// }
+// Function.prototype.bind1 = function() {
+// 	// arguments 是个类数组对象，其包含一个 length 属性
+// 	// 解析参数成为数组
+// 	const arg = Array.prototype.slice.call(arguments);
+	
+// 	// 获取 this 数组第一项
+// 	const t = arg.shift();
+
+// 	// this 调用这个方法的函数
+// 	const self = this;
+// 	// 返回一个函数
+// 	return function() {
+// 		return self.apply(t, arg)
+// 	}
+// }
+
+// const fn2 = fn1.bind1({x: 100}, {a: 100}, 200)
+// fn2()
+
+	// let i, a;
+	// for(i = 0; i < 10; i++) {
+	// 	a = document.createElement('a')
+	// 	a.innerHTML = i+'<br>'
+	// 	a.addEventListener('click', function(e) {
+	// 		e.preventDefault()
+	// 		console.log(i) // 都是输出10
+	// 	})
+	// 	document.getElementById('ida').appendChild(a)
+	// }
+	// 函数作为返回值
+	// function create() {
+	// 	const a = 100
+	// 	return function() {
+	// 		console.log(a)
+	// 	}
+	// }
+	// const fn = create()
+	// const a = 200
+	// fn() // 100
+
+// const guyue = {
+// 	name: '古月',
+// 	hi() {
+// 		// this 即当前对象
+// 		console.log(this)
+// 	},
+// 	hei() {
+// 		setTimeout(function() {
+// 			// this 指向window
+// 			console.log(this)
+// 		})
+// 		setTimeout(() => {
+// 			// this guyue
+// 			console.log(this)
+// 		})
+// 	}
+// }
+// class People {
+// 	constructor(name) {
+// 		this.name = name
+// 		this.age = 20
+// 	}
+// 	sayHi() {
+// 		console.log(this)
+// 	}
+// }
+// const zhangsan = new People('张三')
+// zhangsan.sayHi() // zhangsan 对象
+// 闭包隐藏数据，只提供API
+let dom 
+for(let i = 0; i < 3; i++){
+	const  p1=document.createElement('p')
+	p1.innerText = `这是一文字${i}`
+	dom = document.getElementById('ida')
+	dom.appendChild(p1)
+}
+Promise.resolve().then(() => {
+	console.log(dom.children.length)
+	alert('Promise')
+})
+setTimeout(() => {
+	console.log(dom.children.length)
+	alert('setTimeout')
+}, 0)
+
+
 </script>
